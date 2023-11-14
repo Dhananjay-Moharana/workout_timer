@@ -595,9 +595,8 @@ class _savedPageState extends ConsumerState<savedPage> {
                                             Padding(
                                               padding: EdgeInsets.only(
                                                   top: 14),
-                                              child: FlatButton(
-                                                shape: CircleBorder(),
-                                                color: Colors.transparent,
+                                              child: ElevatedButton(
+                                            
                                                 child: FaIcon(
                                                   FontAwesomeIcons.edit,
                                                   color: backgroundColor,

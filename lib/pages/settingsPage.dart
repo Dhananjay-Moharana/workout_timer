@@ -143,10 +143,8 @@ class _SettingsPageState extends State<SettingsPage> {
               onPressed: () async {
                 await FlutterDisplayMode.setPreferredMode(element);
                 await savedData.saveInt('deviceModeId', element.id);
-                Scaffold.of(context).showSnackBar(new SnackBar(
-                    content: new Text(
-                        'Please Restart the app to apply the changes')));
-                selected = element;
+                Scaffold.of(context);
+             
                 if (mounted) {
                   setState(() {});
                 }
